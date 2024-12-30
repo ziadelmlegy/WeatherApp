@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./image/logo@2x.png">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Weather</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container-fluid">
+      <div class="icon d-flex justify-content-between align-items-center">
+        <div class="image">
+          <img src="./image/logo@2x.png" alt="logo">
+        </div>
+        <div class="weather">
+          <a class="navbar-brand" href="#">Weather</a>
+          <p>tagline goes here</p>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 link">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Live Cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+<div class="py-4 landing">
+<div class="container">
+  <div class="search">
+    <input type="search" class="search-input" id="searchInput" placeholder="Find Your location">
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="item h-75">
+        <div class="one-day d-flex justify-content-between ">
+          <span class="onday" id="toDay"></span>
+          <div>
+            <span id="dayNumber">5</span>
+            <span id="dayName">Friday</span>
+          </div>
+        </div>
+        <p class="day" id="country">Cairo</p>
+        <div class="d-flex">
+          <span class="degry" id="degrayDay">21.1  <span><sup>o</sup>C</span></span>
+          <img class="img-degry" id="imgDegry" src="" alt="">
+        </div>
+       
+        <p  id="conditionText">Clear</p>
+        <div class="foot py-3">
+          <span><img src="./image/icon-umberella@2x.png" alt=""> <span id="todayHumidity"></span></span>
+          <span><img src="./image/icon-wind@2x.png" alt=""><span id="todayWind"></span></span>
+          <span><img src="./image/icon-compass@2x.png" alt=""> <span id="todayWindDirection"></span></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="item text-center h-75 " id="item2">
+        <div class="day-2 text-center ">
+         <span id="tomorrowDay"></span>
+        </div>
+        <div>
+          <img id="tomorrowImgDegry" src="" alt="">
+        </div>
+        <div class="degry-2">
+          <span class="degry-2" id="maxDegryTomorrow"><sup>o</sup>C</span>
+          <span id="minDegryTomorrow"><sup>o</sup></span>
+        </div>
+
+        <p id="conditionTomorrowText"></p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="item text-center h-75 " id="item3">
+        <div class="day-2 text-center ">
+         <span class="bg#2D303D" id="afterNextDayName">Saturday</span>
+        </div>
+        <div>
+          <img id="afterNextImgDegry" src="" alt="">
+        </div>
+        <div class="degry-2">
+          <span class="degry-2" id="afterNextMaxDegry">21.1<sup>o</sup>C</span>
+          <span id="afterNextMinDegrey">15.9<sup>o</sup></span>
+        </div>
+
+        <p id="afterNextConditionText">Partly Cloudy</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="footer">
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="item">
+        <input type="search" placeholder="Enter Your Email subscribe">
+        <button>Subscribe</button>
+        <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="social">
+        <span><i class="fa-brands fa-facebook"></i></span>
+        <span><i class="fa-brands fa-twitter"></i></span>
+        <span><i class="fa-brands fa-linkedin"></i></span>
+        <span><i class="fa-solid fa-cloud"></i></span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
